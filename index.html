@@ -12,7 +12,7 @@
 <div id="header">
     <div class="container">
         <nav>
-            <img src="pictures/abi_upscayl_1x_realesrgan-x4plus.png" class="logo">
+            <img src="pictures/abi_upscayl_1x_realesrgan-x4plus.png" class ="logo">
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -28,7 +28,7 @@
             <h1>Hi, I'm <span>Abishek</span> Nirupan <br> Bhuvanaratnam</h1>
         </div>
     </div>
-</div>
+</div> 
 <!-- ---------about----------- -->
 <div id="about">
     <div class="container">
@@ -40,7 +40,7 @@
                 <h1 class="sub-title">About Me</h1>
                 <p>Hi There! I am a final-year undergraduate at the University of Toronto with a passion for Healthcare Data science and AI! I am currently undergoing a research project under T-CAIREM's AI in Medicine Summer Student
                     Research Program! Currently my project consists of predicting non-invasive ventilation needs in neuromuscular disorders. Starting in molecular biology and transitioned to digital healthcare and AI, my ultimate 
-                passion is to transform patient care through innovative technology. Feel free to reach out! </p>
+                passion is to transform patient care through innovaitve technology. Feel free to reach out! </p>
 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -138,4 +138,108 @@
             <div>
                 <i class="fa-solid fa-chalkboard-user"></i>
                 <h2>Career Coaching for Students</h2>
-                <p>Have you ever felt uncertain about your academic or career path? Maybe you want to start over but are scared to do so. I'm here to tell you that you CAN do it. I have had the privilege of guiding many high school and university students, offering personalized career mentorship tailored to their unique journeys. I can help you navigate
+                <p>Have you ever felt uncertain about your academic or career path? Maybe you want to start over but are scared to do so. I'm here to tell you that you CAN do it. I have had the privilege of guiding many high school and university students, offering personalized career mentorship tailored to their unique journeys. I can help you navigate academic challenges, discover the career path that truly excites you, and achieve your professional dreams. Let's work together to unlock your full potential and create a future you're passionate about. This offer is completely free of charge!</p>
+                <a href="#contact">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-music"></i>
+                <h2>Piano/Music Teacher</h2>
+                <p>Have you ever wanted to play or deepen your love for music? As a graduate of the Royal Conservatory of Muisc, I offer personalized piano lessons for all ages and skill levels. Whether you are just starting or looking to master advanced pieces, I am here to guide your musical journey and help you discover the joy of playing the piano.</p>
+                <a href="#contact">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------portfolio----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="pictures/pesticide.png">
+                <div class="layer">
+                    <h3>Green Extraction and Potential Bio-pesticidal Applications of Neem</h3>
+                    <p>A systemic review exploring sustainable neem oil extraction methods and its bio-pesticidal applications for major cash crops like coconut and cocoa in Sri-Lanka and Ghana.</p>
+                    <a href="https://drive.google.com/file/d/1uG8hYmC5Zw8rrXd3f4c7SD-yvYIssWJO/view"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pictures/olink.png">
+                <div class="layer">
+                    <h3>Data Analysis and Visualization of Proteomics Data using R</h3>
+                    <p>This project involved using R programming to perform data anlysis and create visualizations for a COVID-19 study with PEA dataset and clinical data from Olink Proteomics, focusing on proteomics insights.</p>
+                    <a href="https://drive.google.com/drive/folders/14sScTemRrU7q0myH2Hg6I0KKD1rZY-y_?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ---------contact----------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>abiniru2015@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>(647)617-2406</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/abisheknirupan/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/abhuvanas"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="pictures/Professional Resume copy.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © belongs to Abishek Nirupan Bhuvanaratnam. </p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwJDbu42-8rMgoYO0_Lx9oVy-b-h3DM41eUDiA9ChuhE302ctCoudZlOxp8C4E9ehT6GA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
