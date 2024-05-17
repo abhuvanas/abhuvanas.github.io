@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4efa8812b4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="pictures/abi_upscayl_1x_realesrgan-x4plus.png" class ="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Healthcare Data Scientist</p>
+            <h1>Hi, I'm <span>Abishek</span> Nirupan <br> Bhuvanaratnam</h1>
+        </div>
+    </div>
+</div> 
+<!-- ---------about----------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="pictures/Abishek profile.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi There! I am a final-year undergraduate at the University of Toronto with a passionfor Healthcare Data science and AI! I am currently undergoing a research project under T-CAIREM's AI in Medicine Summer Student
+                    Research Program! Currently my project consists of predicting non-invasive ventilation needs in neuromuscular disorders. Starting in molecular biology and transitionedto digital healthcare and AI, my ultimate 
+                passion is to transform patient care through innovaitve technology. Feel free to reach out! </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                    <p class="tab-links" onclick="opentab('tech skills')">Tech Skills</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data Science</span><br>Building Healthcare ML/AI Projects</li>
+                        <li><span>Clinical Informatics</span><br>Data-Driven Healthcare Optimization</li>
+                        <li><span>Healthcare Analytics</span><br>Transforming Healthcare Data into Insights</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>May 2024 - Present</span><br>Machine Learning Research Student at T-CAIREM - Temerty Center for AI, Research, and Eduction in Medicine, Toronto, Ontario</li>
+                        <li><span>August 2023 - Present</span><br>Clinical Informatician at Toronto Metropolitan University, Toronto, Ontario</li>
+                        <li><span>June 2023 - April 2024</span><br>Junior Technical Aid at North York General Hospital, North York, Ontario</li>
+                        <li><span>August 2022 - December 2022</span><br>Junior Market Analyst at Husky Technologies, Bolton, Ontario</li>
+                        <li><span>January 2022 - March 2022</span><br>R Programming Instructor at The Bridge Church for All Nations, Pickering, Ontario</li>
+                        <li><span>May 2021 - June 2022</span><br>Clinical Research Student at Princess Margaret Cancer Center, Toronto, Ontario</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Honours Bachelors of Science - Molecular Biology, Immunology and Disease </span><br>University of Toronto</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li><span>July 2023</span><br>Panel on Research Ethics TCPS2: CORE-2022 - Course on Research Ethics, Government of Canada</li>
+                        <li><span>August 2022</span><br>Healthcare Analytics: AI, Big Data & Digital Transformation | Demystifying Healthcare Data to Enhance Patient Care, University of Toronto - Rotman School of Management</li>
+                        <li><span>May 2022</span><br>Epic - Research Fundamentals - Oncology, University Health Network</li>
+                        <li><span>May 2022</span><br>Health Canada Regulations for Clinical Trials Involving Drugs and Biologics, University Health Network</li>
+                        <li><span>May 2022</span><br>Informed Consent in Research Involving Humans, University Health Network</li>
+                        <li><span>August 2021</span><br>Canada GCP, CITI Program</li>
+                        <li><span>August 2021</span><br>Health Canada Division 5 - Drugs for Clinical Trials Involving Human Subjects, CITI Program</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="tech skills">
+                    <ul>
+                        <div class="skill">
+                            <div class="skill-name">Python</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="75%" style="max-width:75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-name">R Programming</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="80%" style="max-width:80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-name">Excel</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="90%" style="max-width:90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-name">SQL</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="75%" style="max-width:75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-name">GITHUB</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="70%" style="max-width:70%"></div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services----------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Healthcare Data Science Solutions</h2>
+                <p>With experience in healthcare data science projects, I can assist as an associate or entry-level data scientist to optimize patient/healthcare/clinical outcomes through AI, machine learning, and data-driven insights.</p>
+                <a href="#contact">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <h2>Career Coaching for Students</h2>
+                <p>Have you ever felt uncertain about your academic or career path? Maybe you want to start over but are scared to do so. I'm here to tell you that you CAN do it. I have had the privilege of guiding many high school and university students, offering personalized career mentorship tailored to their unique journeys. I can help you navigate academic challenges, discover the career path that truly excites you, and achieve your professional dreams. Let's work together to unlock your full potential and create a future you're passionate about. This offer is completely free of charge!</p>
+                <a href="#contact">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-music"></i>
+                <h2>Piano/Music Teacher</h2>
+                <p>Have you ever wanted to play or deepen your love for music? As a graduate of the Royal Conservatory of Muisc, I offer personalized piano lessons for all ages and skill levels. Whether you are just starting or looking to master advanced pieces, I am here to guide your musical journey and help you discover the joy of playing the piano.</p>
+                <a href="#contact">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------portfolio----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="pictures/pesticide.png">
+                <div class="layer">
+                    <h3>Green Extraction and Potential Bio-pesticidal Applications of Neem</h3>
+                    <p>A systemic review exploring sustainable neem oil extraction methods and its bio-pesticidal applications for major cash crops like coconut and cocoa in Sri-Lanka and Ghana.</p>
+                    <a href="https://drive.google.com/file/d/1uG8hYmC5Zw8rrXd3f4c7SD-yvYIssWJO/view"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pictures/olink.png">
+                <div class="layer">
+                    <h3>Data Analysis and Visualization of Proteomics Data using R</h3>
+                    <p>This project involved using R programming to perform data anlysis and create visualizations for a COVID-19 study with PEA dataset and clinical data from Olink Proteomics, focusing on proteomics insights.</p>
+                    <a href="https://drive.google.com/drive/folders/14sScTemRrU7q0myH2Hg6I0KKD1rZY-y_?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ---------contact----------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>abiniru2015@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>(647)617-2406</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/abisheknirupan/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/abhuvanas"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="pictures/Professional Resume copy.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © belongs to Abishek Nirupan Bhuvanaratnam. </p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwJDbu42-8rMgoYO0_Lx9oVy-b-h3DM41eUDiA9ChuhE302ctCoudZlOxp8C4E9ehT6GA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
