@@ -224,6 +224,18 @@
 
 </script>
 <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+    
+</script>
+<script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwJDbu42-8rMgoYO0_Lx9oVy-b-h3DM41eUDiA9ChuhE302ctCoudZlOxp8C4E9ehT6GA/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
